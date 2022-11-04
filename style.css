@@ -1,0 +1,334 @@
+
+/* 
+    Reset all the "User-Agent-Stylesheet" styles, 
+    except for the 'display' property 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+    all: unset;
+    display: revert;
+}
+
+.container__main{
+    display: flex;
+    background-color: rgb(255, 89, 0);
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 700px;
+    background-image: url("Pop it/images/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.title{
+    float: left;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    padding-left: 20px;
+}
+
+.navbar{
+    height: 80px;
+    padding: 10px;
+    color: black;
+    
+}
+
+.hero{
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.hero--title{
+    font-family:'Roboto';
+    font-size: 8em;
+    color:white;
+}
+.hero--text{
+    color: white;
+}
+.hero--button{
+    background-color: aqua;
+    width: 100px;
+    height: 60px;
+    margin: 20px 330px 0px 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.button{
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    padding: 0px 20px;
+    width: 130px;
+    border-radius: 8px;
+
+
+}
+
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+.humberbutton {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .icon-close {
+    display: none;
+  }
+  
+  .navcontainer {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(235, 160, 30);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .show-menu {
+    transform: translateY(0);
+  }
+
+.body{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+.article{
+    width: 100%;
+    height: 500px;
+}
+
+.article--one{
+    background-color: white;
+    color: black;
+    flex-grow: 1;
+}
+
+.title--article{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.article--text{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.article--two{
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+.section--article-two{
+    margin-top: 100px;
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 15%;
+    height: 350px;
+    margin-left: 100px;
+    justify-content: center;
+}
+.card--image{
+    width: 100%;
+    
+}
+
+.title--card{
+    width: 85%;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.card--button{
+    background-color: rgb(255, 89, 0);
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      left: 27%;
+      top: 10px;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      
+    }
+    
+    .card--button:hover,
+    .card--button:focus {
+        background-color: rgb(255, 89, 0);
+    }
+    
+
+
+
+.article--three{
+    background-image: url("Pop it/images/bg-grid.png");
+    background-size: 100% 100%;
+    flex-grow: 1;
+}
+
+.section--article-three{
+    margin-left: 50px;
+}
+
+.title--article-three{
+    padding: 0px;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.article--text-three{
+    width: 50%;
+}
+
+.section--photo{
+    position: relative;
+    margin-top: -130px;
+    padding-left: 60%;
+    width: 25%;
+    height: auto;
+    left: 140px;
+    bottom: 30px;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+}
+
+.title--foot{
+    padding-top: 30px;
+}
+
+.button--dark-theme{
+ padding-top: 30px;
+}
+
+@media only screen and (min-width:480px) and (orientation:portrait){
+
+
+    .header{
+        width: 100%;
+        height: 400px;
+        background-image: url("Pop it/images/background.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .hero{
+        width: 300px;
+        padding-left: 30px;
+        margin-top: -40px;
+    }
+    .hero--title{
+        font-family:'Roboto';
+        font-size: 4em;
+        color:white;
+    }
+    .hero--text{
+        width: 70%;
+        color: white;
+        font-size: 0.8em;
+    }
+    .hero--button{
+        background-color: aqua;
+        width: 80px;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .article--two{
+        background-color: aqua;
+        height: 1200px;
+    }
+
+    .section--article-two{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 45%;
+        height: 350px;
+        margin-left: 150px;
+        justify-content: center;
+    }
+    .card--image{
+        width: 200px;
+        
+    }
+    
+    .title--card{
+        width: 85%;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .section--photo{
+        position: relative;
+        margin-top: -80px;
+        padding-left: 55%;
+        width: 50%;
+        height: auto;
+        left: 10px;
+        bottom: 160px;
+        font-size: 0.8em;
+    }
+    
+
+}
