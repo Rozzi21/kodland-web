@@ -4,6 +4,9 @@ const hamburger= document.querySelector(".humberbutton");
 const closeIcon= document.querySelector(".icon-close");
 const menuIcon = document.querySelector(".icon-menu");
 
+
+// burger menu functions
+
 function toggleMenu() {
   if (menu.classList.contains("show-menu")) {
     menu.classList.remove("show-menu");
